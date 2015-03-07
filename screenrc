@@ -1,0 +1,65 @@
+
+# source the .screenrc
+# ctrl-a :
+# source $HOME/.screenrc
+
+# remember to check putty's Terminal -> Keyboards --> The function keys and keypad --> Xterm R6
+#
+altscreen on # erase screen when quit apps
+
+#support color 256
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+
+defscrollback 10000
+
+#status bar
+#caption always "%{= wk} %{= KY} [%n]%t @ %H %{-} %= %{= KR} %l %{-} | %{= KG} %Y-%m-%d %{-} "
+#hardstatus alwayslastline " %-Lw%{= Bw}%n%f %t%{-}%+Lw %=| %0c:%s "
+hardstatus alwayslastline " %-Lw%{= Bw}%n%f %t%{-}%+Lw %="
+
+#bindkey ^[z prev
+#bindkey ^[x next
+#bindkey ^[d kill
+#bindkey "^[1" select 0
+#bindkey "^[2" select 1
+#bindkey "^[3" select 2
+#bindkey "^[4" select 3
+#bindkey "^[5" select 4
+#bindkey "^[6" select 5
+#bindkey "^[7" select 6
+#bindkey "^[8" select 7
+#bindkey "^[9" select 8
+#bindkey "^[0" select 9
+
+
+# using Ctrl+Left & Ctrl+Right 
+bindkey ^[[1;5D prev
+bindkey ^[[1;5C next
+bindkey \033[D prev
+bindkey \033[C next
+ 
+
+vbell off
+startup_message off
+defbce on # erase background with current bg color
+defutf8 on
+defflow on
+nonblock on # dont freeze when screen die
+
+
+screen -t bash 1
+screen -t bash 2
+screen -t bash 3
+screen -t bash 4
+screen -t bash 5
+
+# remove some stupid / dangerous key bindings
+#bind s
+#bind k
+#bind W
+#bind ^k
+#bind .
+#bind ^\
+#bind \\
+#bind ^h
+#bind h
