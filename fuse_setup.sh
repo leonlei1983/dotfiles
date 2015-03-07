@@ -1,0 +1,8 @@
+#!/bin/bash
+
+fusermount -u ~/mergeBS
+rm -fr ~/bs-build-part
+cd ~
+git clone git@192.168.81.7:bs-build-part/bs-build-part.git
+mkdir -p ~/mergeBS
+unionfs-fuse -o cow /root/bs-build-part=RW:/root/NewRepo=RO /root/mergeBS
