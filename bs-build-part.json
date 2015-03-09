@@ -1,0 +1,10 @@
+["query", "/root/bs-build-part", {
+  "all": "",
+  "since": "n:tmp",
+  "expression": ["anyof",
+    ["name", ["Makefile", "build_list.mk", "Notes.txt", ".gitignore", "naslib_h.tar.gz", "build_lock.py", "busybox-1.01/busybox.patch", "busybox-1.01/busybox.cfg"], "wholename"],
+    ["match", "Makefile.QNAP"],
+    ["match", "templates/*", "wholename"]
+  ],
+  "fields": ["name"]
+}]
