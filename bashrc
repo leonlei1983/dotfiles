@@ -1,9 +1,9 @@
 set +h
 
-echo "***********************************************"
+echo "***********************************************************"
 echo "dotfiles/fuse_setup.sh to setup a clean project"
 echo "\"git st\" to replace \"git status\" if you feel slow response"
-echo "***********************************************"
+echo "***********************************************************"
 
 source ~/.git-completion
 PS1="[\u@ \w]\$ "
