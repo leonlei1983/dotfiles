@@ -10,6 +10,6 @@ mkdir -p ~/mergeBS
 unionfs-fuse -o cow /root/bs-build-part=RW:/root/NewRepo=RO /root/mergeBS
 watchman watch ~/bs-build-part
 
-# get the current time
+# get the repository created time
 INIT_TIME=$(watchman clock /root/bs-build-part/ | jq -M .clock)
-sed -i 's/"n:tmp"/'${INIT_TIME}'/g' ~/dotfiles/bs-build-part.json
+sed -i 's/"init_time"/'${INIT_TIME}'/g' ~/dotfiles/bs-build-part.json
