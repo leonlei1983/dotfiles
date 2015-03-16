@@ -1,6 +1,7 @@
 #!/bin/bash
 
 watchman watch-del ~/bs-build-part
+sed -i 's/"c[^"]*"/"init_time"/g' ~/dotfiles/bs-build-part.json
 fusermount -u ~/mergeBS
 rm -fr ~/bs-build-part
 cd ~
@@ -12,4 +13,5 @@ watchman watch ~/bs-build-part
 
 # get the repository created time
 INIT_TIME=$(watchman clock /root/bs-build-part/ | jq -M .clock)
+echo ${INIT_TIME}
 sed -i 's/"init_time"/'${INIT_TIME}'/g' ~/dotfiles/bs-build-part.json
