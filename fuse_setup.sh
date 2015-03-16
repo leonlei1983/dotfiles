@@ -13,5 +13,4 @@ watchman watch ~/bs-build-part
 
 # get the repository created time
 INIT_TIME=$(watchman clock /root/bs-build-part/ | jq -M .clock)
-echo ${INIT_TIME}
 sed -i 's/"init_time"/'${INIT_TIME}'/g' ~/dotfiles/bs-build-part.json
