@@ -3,7 +3,7 @@
   "expression":
   ["allof",
     ["anyof",
-        ["name", ["Makefile", "build_list.mk", "Notes.txt", "zmake",".gitignore", "naslib_h.tar.gz", "build_lock.py", "busybox-1.01/busybox.patch", "busybox-1.01/busybox.cfg"], "wholename"],
+        ["name", ["Makefile", "build_list.mk", "config_list.mk", "Notes.txt", "zmake",".gitignore", "naslib_h.tar.gz", "build_lock.py", "busybox-1.01/busybox.patch", "busybox-1.01/busybox.cfg"], "wholename"],
         ["match", "Makefile.QNAP", "basename"],
         ["match", "templates/*", "wholename"]
     ],
