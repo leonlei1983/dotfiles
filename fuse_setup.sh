@@ -1,6 +1,8 @@
 #!/bin/bash
 
-watchman watch-del ~/bs-build-part
+watchman shutdown-server
+echo 100000 > /proc/sys/fs/inotify/max_user_watches
+
 sed -i 's/"c[^"]*"/"init_time"/g' ~/dotfiles/bs-build-part.json
 fusermount -u ~/mergeBS
 rm -fr ~/bs-build-part
