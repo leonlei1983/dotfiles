@@ -11,6 +11,9 @@ PS1="[\u@ \w]\$ "
 # TARGET_TRIPLET=arm-linux-gnueabi
 # export PATH=/root/CT/${TARGET_TRIPLET}/cross-tools/bin:/root/CT/host/cross-tools/bin:${PATH}:.
 
+# for zmake execution
+export PATH=${PATH}:.
+
 alias ll='ls -lh --color=auto'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
