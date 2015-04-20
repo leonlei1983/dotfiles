@@ -8,9 +8,6 @@ echo "***********************************************************"
 source ~/.git-completion
 PS1="[\u@ \w]\$ "
 
-# TARGET_TRIPLET=arm-linux-gnueabi
-# export PATH=/root/CT/${TARGET_TRIPLET}/cross-tools/bin:/root/CT/host/cross-tools/bin:${PATH}:.
-
 # for zmake execution
 export PATH=${PATH}:.
 
@@ -20,12 +17,3 @@ alias grep='grep --color=auto'
 
 unset CC CXX AR AS LD RANLIB READELF STRIP OBJDUMP OBJCOPY
 export CC CXX AR AS LD RANLIB READELF STRIP OBJDUMP OBJCOPY
-
-# export CC="${TARGET_TRIPLET}-gcc"
-# export CXX="${TARGET_TRIPLET}-g++"
-# export AR="${TARGET_TRIPLET}-ar"
-# export AS="${TARGET_TRIPLET}-as"
-# export LD="${TARGET_TRIPLET}-ld"
-# export RANLIB="${TARGET_TRIPLET}-ranlib"
-# export READELF="${TARGET_TRIPLET}-readelf"
-# export STRIP="${TARGET_TRIPLET}-strip"
