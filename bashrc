@@ -8,9 +8,6 @@ echo "***********************************************************"
 source ~/.git-completion
 PS1="[\u@ \w]\$ "
 
-# for zmake execution
-export PATH=${PATH}:.
-
 alias ll='ls -lh --color=auto'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
