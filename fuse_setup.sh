@@ -11,8 +11,12 @@ cd ~
 
 git clone git@192.168.81.7:bs-build-part/bs-build-part.git
 mkdir -p ~/mergeBS ~/tmp
+# overlayfs cannot overlay the dir mount from outside container, so we copy the dir to local
+if [ ! -d "NewRepo2" ]; then
+    cp -r NewRepo/ NewRepo2
+fi
 # unionfs-fuse -o cow /root/bs-build-part=RW:/root/NewRepo=RO /root/mergeBS
-mount -t overlay overlay -olowerdir=/root/NewRepo,upperdir=/root/bs-build-part,workdir=/root/tmp /root/mergeBS
+mount -t overlay overlay -olowerdir=/root/NewRepo2,upperdir=/root/bs-build-part,workdir=/root/tmp /root/mergeBS
 watchman watch ~/bs-build-part
 
 # get the repository created time
