@@ -12,6 +12,8 @@ sudo chown ${USER} .ssh
 mkdir -p ~/mergeBS ~/tmp
 # lower=read-only dir , upper=rw dir
 sudo mount -t overlay overlay -olowerdir=/root/NasX86_4.2.0,upperdir=${HOME}/mergeBS,workdir=${HOME}/tmp ${HOME}/mergeBS
+cd mergeBS
+git pull
 # watchman watch ~/bs-build-part
 
 # get the repository created time
