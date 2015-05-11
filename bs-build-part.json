@@ -1,4 +1,4 @@
-["query", "/root/bs-build-part", {
+["query", "~/bs-build-part", {
   "all": "",
   "expression":
   ["allof",
