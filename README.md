@@ -1,2 +1,2 @@
 # build_dotfiles
-dotfiles for build machine
+dotfiles for Rod's Zeno build machine
