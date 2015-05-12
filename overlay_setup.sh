@@ -4,8 +4,6 @@
 # echo 100000 > /proc/sys/fs/inotify/max_user_watches
 
 # sed -i 's/"c:[^"]*"/"init_time"/g' ~/dotfiles/bs-build-part.json
-sed -i 's/David Hu/Wayne Chou/g' ~/dotfiles/gitconfig
-sed -i 's/chin33z@gmail.com/waynechou@qnap.com/g' ~/dotfiles/gitconfig
 
 umount ~/mergeBS
 rm -fr ~/mergeBS ~/tmp
