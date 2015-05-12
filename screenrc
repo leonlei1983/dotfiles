@@ -5,6 +5,7 @@
 
 # remember to check putty's Terminal -> Keyboards --> The function keys and keypad --> Xterm R6
 #
+defshell -bash
 altscreen on # erase screen when quit apps
 
 #support color 256
