@@ -4,14 +4,17 @@
 # echo 100000 > /proc/sys/fs/inotify/max_user_watches
 
 # sed -i 's/"c:[^"]*"/"init_time"/g' ~/dotfiles/bs-build-part.json
-sudo umount ~/mergeBS
-sudo rm -fr ~/mergeBS ~/tmp
+RUN sed -i 's/David Hu/Wayne Chou/g' dotfiles/gitconfig &&\
+    sed -i 's/chin33z@gmail.com/waynechou@qnap.com/g' dotfiles/gitconfig
+
+umount ~/mergeBS
+rm -fr ~/mergeBS ~/tmp
 cd ~
 
-sudo chown ${USER} .ssh
+#sudo chown ${USER} .ssh
 mkdir -p ~/mergeBS ~/tmp
 # lower=read-only dir , upper=rw dir
-sudo mount -t overlay overlay -olowerdir=/root/NasX86_4.2.0,upperdir=${HOME}/mergeBS,workdir=${HOME}/tmp ${HOME}/mergeBS
+mount -t overlay overlay -olowerdir=/root/NasX86_4.2.0,upperdir=${HOME}/mergeBS,workdir=${HOME}/tmp ${HOME}/mergeBS
 cd mergeBS
 git pull
 # watchman watch ~/bs-build-part
