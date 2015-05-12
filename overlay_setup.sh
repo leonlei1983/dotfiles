@@ -5,16 +5,15 @@
 
 # sed -i 's/"c:[^"]*"/"init_time"/g' ~/dotfiles/bs-build-part.json
 
-umount ~/mergeBS
-rm -fr ~/mergeBS ~/tmp
+umount ~/nasx86_4-2-0-x86_64_bs
+rm -fr ~/tmp ~/nasx86_4-2-0-x86_64_bs
 cd ~
 
 #sudo chown ${USER} .ssh
-mkdir -p ~/mergeBS ~/tmp
+mkdir -p ~/tmp
+git clone git@192.168.81.7:nasx86_4-2-0-x86_64_bs/nasx86_4-2-0-x86_64_bs.git
 # lower=read-only dir , upper=rw dir
-mount -t overlay overlay -olowerdir=/root/NasX86_4.2.0,upperdir=${HOME}/mergeBS,workdir=${HOME}/tmp ${HOME}/mergeBS
-cd mergeBS
-git pull
+mount -t overlay overlay -olowerdir=/root/NasX86_4.2.0,upperdir=/root/nasx86_4-2-0-x86_64_bs,workdir=${HOME}/tmp /root/nasx86_4-2-0-x86_64_bs
 # watchman watch ~/bs-build-part
 
 # get the repository created time
