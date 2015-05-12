@@ -1,8 +1,8 @@
 set +h
 
 echo "***********************************************************"
-echo "dotfiles/fuse_setup.sh to setup a clean project"
-echo "\"git st\" to replace \"git status\" if you got slow response"
+echo "Please modify your name & email of the gitconfig in dotfiles/overlay_setup.sh"
+echo "dotfiles/overlay_setup.sh to setup a clean project"
 echo "***********************************************************"
 
 source ~/.git-completion
