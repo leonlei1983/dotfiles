@@ -1,7 +1,7 @@
 set +h
 
 echo "***********************************************************"
-echo "Please modify your name & email of the gitconfig in dotfiles/overlay_setup.sh"
+echo "Please modify your name & email of .gitconfig , then execute"
 echo "dotfiles/overlay_setup.sh to setup a clean project"
 echo "***********************************************************"
 
