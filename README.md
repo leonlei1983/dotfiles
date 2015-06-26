@@ -1,2 +1,2 @@
-# rod_build_dotfiles
-dotfiles for Rod's Zeno build machine
+# dotfiles
+environments setting for QNAP pure builder image
