@@ -1,6 +1,7 @@
 set +h
 
-source ~/.git-completion
+. /etc/profile
+. ~/.git-completion
 # PS1="[\u@\h  \w]\$ "
 
 alias ll='ls -lh --color=auto'
