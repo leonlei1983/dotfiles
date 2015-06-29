@@ -16,7 +16,3 @@ for file in $files; do
     echo "Creating symlink to $file in container's home directory."
     ln -sf $dir/$file .$file
 done
-
-echo
-echo "Please modify /home/$USER/working/.gitconfig RIGHT NOW before using the containers."
-echo
