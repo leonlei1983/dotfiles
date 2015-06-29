@@ -1,7 +1,7 @@
 set +h
 
 source ~/.git-completion
-PS1="[\u@ \w]\$ "
+PS1="[\u@\h  \w]\$ "
 
 alias ll='ls -lh --color=auto'
 alias ls='ls --color=auto'
