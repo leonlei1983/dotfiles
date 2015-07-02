@@ -7,7 +7,7 @@
 ########## Variables
 
 dir=dotfiles                    # dotfiles directory
-files="screenrc bashrc gitconfig git-completion"    # list of files/folders to symlink in homedir
+files="screenrc bashrc git-completion"    # list of files/folders to symlink in homedir
 
 ##########
 
