@@ -1,4 +1,3 @@
-
 # source the .screenrc
 # ctrl-a :
 # source $HOME/.screenrc
@@ -16,7 +15,7 @@ defscrollback 10000
 #status bar
 #caption always "%{= wk} %{= KY} [%n]%t @ %H %{-} %= %{= KR} %l %{-} | %{= KG} %Y-%m-%d %{-} "
 #hardstatus alwayslastline " %-Lw%{= Bw}%n%f %t%{-}%+Lw %=| %0c:%s "
-hardstatus alwayslastline " %-Lw%{= Bw}%n%f %t%{-}%+Lw %="
+hardstatus alwayslastline " %-Lw%{= Bw}%n%f %t%{-}%+Lw %=| %M %d %0c:%s "
 
 #bindkey ^[z prev
 #bindkey ^[x next
