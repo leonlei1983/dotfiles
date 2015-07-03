@@ -2,7 +2,7 @@ set +h
 
 . /etc/profile
 . ~/.git-completion
-PS1="[\u@$PNAME  \w]\$ "
+PS1='\u@$PNAME [ \e[32m$PWD\e[0m ]\n$ '
 
 alias ll='ls -lh --color=auto'
 alias ls='ls --color=auto'
