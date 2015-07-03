@@ -9,7 +9,7 @@
 dir=dotfiles
 
 # list of files/folders to symlink in homedir
-files="screenrc bashrc git-completion"
+files="screenrc bashrc git-completion.sh git-prompt.sh"
 
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks 
 for file in $files; do
