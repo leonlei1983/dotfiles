@@ -4,7 +4,7 @@ set +h
 . ~/.git-completion.sh
 . ~/.git-prompt.sh
 
-PS1='\u@$PNAME [\[\e[1;31m\]$(__git_ps1)\[\e[0m\] \[\e[32m\]$PWD\[\e[0m\] ]\n$ '
+PS1='\u@$PNAME [\[\e[1;31m\]$(__git_ps1 " %s")\[\e[0m\] \[\e[32m\]$PWD\[\e[0m\] ]\n$ '
 
 alias ll='ls -lh --color=auto'
 alias ls='ls --color=auto'
