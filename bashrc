@@ -1,6 +1,6 @@
 set +h
 
-. /etc/profile
+[ ! -z $(echo $PNAME | grep -o ^i686) ] && . /etc/profile
 . ~/.git-completion.sh
 . ~/.git-prompt.sh
 
