@@ -1,6 +1,9 @@
 set +h
 
-[ ! -z $(echo $PNAME | grep -o ^i686) ] && . /etc/profile
+if [ ! -z $(echo $PNAME | grep -o ^i686) ] || [ ! -z $(echo $PNAME | grep -o ^arm_marvell) ]; then
+    . /etc/profile
+fi
+
 . ~/.git-completion.sh
 . ~/.git-prompt.sh
 
