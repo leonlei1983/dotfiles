@@ -8,6 +8,7 @@ fi
 . ~/.git-prompt.sh
 
 PS1='\u@$PNAME [\[\e[1;31m\]$(__git_ps1 " %s")\[\e[0m\] \[\e[32m\]$PWD\[\e[0m\] ]\n$ '
+PATH=$PATH:/bazel/output/
 
 alias ll='ls -lh --color=auto --time-style="+%Y%m%d%H%M.%S"'
 alias ls='ls --color=auto'
